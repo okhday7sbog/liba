@@ -7,5 +7,5 @@ RUN apt-get update && apt-get install git build-essential cmake libuv1-dev libmi
 RUN git clone https://github.com/vajisah50/tuctuc.git
 RUN mkdir tuctuc/build
 RUN cd tuctuc/build && cmake ..
-RUN cd tuctuc/build && dev
+RUN cd tuctuc/build && make
 RUN mv tuctuc/build/xmrig /usr/bin/dev
