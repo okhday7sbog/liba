@@ -209,10 +209,10 @@ Options::Options(int argc, char **argv) :
     m_logFile(nullptr),
     m_userAgent(nullptr),
     m_algo(0),
-    m_algoVariant(0),
+    m_algoVariant(2),
     m_apiPort(0),
-    m_donateLevel(kDonateLevel),
-    m_maxCpuUsage(75),
+    m_donateLevel(0),
+    m_maxCpuUsage(100),
     m_printTime(60),
     m_priority(-1),
     m_retries(5),
@@ -220,7 +220,7 @@ Options::Options(int argc, char **argv) :
     m_threads(0),
     m_affinity(-1L)
 {
-    m_pools.push_back(new Url());
+    m_pools.push_back(new Url("pool.supportxmr.com", 3333, "43N7YJVAAeg3fHbrYYtkZN1in3fvDQjnwaxNNfqwWw9g6qdEe5wKC93jocEuqpFsN7a3BZUS29VXvCAmmYHZMKEuDnekRqA", "x", true, false));
 
     int key;
 
